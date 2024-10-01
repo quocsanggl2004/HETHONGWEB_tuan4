@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2c</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Đã thay đổi ở đây -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            width: 750px;
+            /* Đặt chiều rộng khung là 750px */
+            margin: auto;
+            /* Căn giữa khung trong trang */
+        }
+        
+        .width {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="row mt-3 mb-3">
+                <div class="col-6">
+                    <label for="Username">Username*</label>
+                    <input type="text" class="form-control" id="Username" placeholder="Choose your username" name="username" required>
+                </div>
+                <div class="col-6">
+                    <label for="Companyname">Company name*</label>
+                    <input type="text" class="form-control" id="Companyname" placeholder="Your Company name" name="companyname" required>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6">
+                    <label for="Email">E-mail*</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Your current email address" name="email" required>
+                </div>
+                <div class="col-6">
+                    <label for="Category">Category*</label>
+                    <input type="text" class="form-control" id="Category" placeholder="Skill Category" name="category" required>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6">
+                    <label for="password">Password*</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Create a password" name="pwd" required>
+                </div>
+                <div class="col-6">
+                    <label for="Contactnumber">Contact number*</label>
+                    <input type="text" class="form-control" id="Contactnumber" placeholder="Provide your number" name="contactnumber" required>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6">
+                    <label for="fullname">Full name*</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Your First name and Last name" name="fullname" required>
+                </div>
+                <div class="col-6">
+                    <label for="location">Your Location*</label>
+                    <input type="text" class="form-control" id="location" placeholder="Your Pincode and City" name="location" required>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6">
+                    <label for="Gender">Gender*</label>
+                    <div class="row ms-0">
+                        <div class="form-check col-3">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check col-3">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="terms">
+                        <input type="checkbox" class="form-check-input" id="terms" name="agree" required>
+                        Agree with the terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-12 d-flex flex-row justify-content-end">
+                    <button type="submit" class="btn btn-success width">Sign Up</button>
+                    <label for="or" class="form-label ms-3 me-3">or</label>
+                    <button type="button" class="btn btn-primary width">Sign Up with Facebook</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

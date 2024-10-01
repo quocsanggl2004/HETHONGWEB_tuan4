@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2a</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            width: 750px;
+            /* Đặt chiều rộng khung là 750px */
+            margin: auto;
+            /* Căn giữa khung trong trang */
+        }
+        
+        .text-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .size-holder {
+            width: 60%;
+        }
+        
+        .size-number {
+            width: 104%;
+        }
+        
+        .size-CVC {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3 border">
+        <form action="action_page.php">
+            <table class="table">
+                <thead class="bg-light">
+                    <tr>
+                        <td colspan="2" class="border-0 border-bottom">
+                            <h1>Checkout</h1>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-light">
+                        <td class="border-0">
+                            <div>
+                                <h4 class="mb-0">Product 1</h4>
+                                <p class="text-secondary mb-0">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </td>
+                        <td class="border-0" colspan="2">
+                            <div>
+                                <h4 class="text-center">$200</h4>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-light">
+                        <td>
+                            <div>
+                                <h4 class="mb-0">Product 2</h4>
+                                <p class="text-secondary mb-0">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </td>
+                        <td colspan="2">
+                            <div>
+                                <h4 class="text-center">$150</h4>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-light">
+                        <td class="border-0">
+                            <h4 class="mb-3">Total</h4>
+                        </td>
+                        <td class="border-0" colspan="2">
+                            <h4 class="text-center">$350</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h3 class="mt-3">Credit Card Details</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ms-2 me-2 size-holder border-0">
+                            <label for="Card" class="form-label">CARD HOLDER</label>
+                            <input type="text" class="form-control" id="CardHolder" placeholder="Card Holder">
+                        </td>
+                        <td class="ms-2 me-2 border-0">
+                            <label for="Date" class="form-label">EXPIRATION DATE</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control input-sm me-3" id="ExpMonth" placeholder="MM">
+                                <h3>/</h3>
+                                <input type="text" class="form-control input-sm ms-3" id="ExpYear" placeholder="YY">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-0">
+                            <label for="Card" class="form-label">CARD NUMBER</label>
+                            <input type="number" class="form-control size-number" id="CardNumber" placeholder="Card Number">
+                        </td>
+                        <td class="border-0">
+                            <label for="CVC" class="form-label ms-4">CVC</label>
+                            <input type="text" class="form-control input-sm size-CVC ms-4" id="CVC" placeholder="CVC">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="border-0">
+                            <button type="button" class="btn btn-primary w-100">Proceed</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
